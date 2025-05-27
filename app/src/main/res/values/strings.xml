@@ -34,4 +34,7 @@
     <string name="section">IT0079\nAW22</string>
     <string name="professor">Submitted to:\nMr. Nite Guerrero</string>
     <string name="backbutton">backbutton</string>
+    <string name="calculator">Calculator</string>
+    <string name="about_us">About Us</string>
+    <string name="c">C</string>
 </resources>

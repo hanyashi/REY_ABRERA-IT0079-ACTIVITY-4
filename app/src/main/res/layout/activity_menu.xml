@@ -36,7 +36,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Calculator"
+                android:text="@string/calculator"
                 android:gravity="center"
                 android:layout_marginBottom="50dp"
                 android:textColor="@color/white" />
@@ -56,12 +56,13 @@
                 android:layout_height="110dp"
                 android:background="@null"
                 android:scaleType="fitCenter"
+                android:contentDescription="@string/about_us"
                 app:srcCompat="@drawable/vista_txt"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="About Us"
+                android:text="@string/about_us"
                 android:gravity="center"
                 android:layout_marginBottom="50dp"
                 android:textColor="@color/white" />

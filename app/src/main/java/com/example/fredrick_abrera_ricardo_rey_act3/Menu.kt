@@ -18,10 +18,10 @@ class Menu : AppCompatActivity() {
         val calculatorBtn = findViewById<ImageButton>(R.id.calculatorBtn)
         val backBtn = findViewById<ImageButton>(R.id.backBtn)
 
-//        calculatorBtn.setOnClickListener{
-//            val intent = Intent(this, calculator::class.java)
-//            startActivity(intent)
-//        }
+        calculatorBtn.setOnClickListener{
+            val intent = Intent(this, CalculatorActivity::class.java)
+            startActivity(intent)
+        }
 
         backBtn.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)

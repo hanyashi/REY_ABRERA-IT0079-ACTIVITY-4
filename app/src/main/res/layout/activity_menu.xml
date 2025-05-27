@@ -81,7 +81,7 @@
                 android:layout_width="65dp"
                 android:layout_height="56dp"
                 android:background="@null"
-                android:contentDescription="@string/continuebutton"
+                android:contentDescription="@string/backbutton"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/vista_back_btn" />
 

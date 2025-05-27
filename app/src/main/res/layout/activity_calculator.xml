@@ -285,7 +285,7 @@
         android:layout_width="65dp"
         android:layout_height="56dp"
         android:background="@null"
-        android:contentDescription="@string/continuebutton"
+        android:contentDescription="@string/backbutton"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

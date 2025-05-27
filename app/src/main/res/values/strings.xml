@@ -30,4 +30,8 @@
     <string name="backspace">Backspace</string>
     <string name="calculatorbtn">calculatorBtn</string>
     <string name="sampledate">SampleDate</string>
+    <string name="names">Made By:\nFredrick D. Abrera\nRicardo R. Rey III</string>
+    <string name="section">IT0079\nAW22</string>
+    <string name="professor">Submitted to:\nMr. Nite Guerrero</string>
+    <string name="backbutton">backbutton</string>
 </resources>

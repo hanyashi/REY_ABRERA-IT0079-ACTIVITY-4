@@ -15,6 +15,7 @@ class Menu : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
 
         val calculatorDesktopBtn = findViewById<ImageButton>(R.id.calculatorDesktopBtn)
+        val txtBtn = findViewById<ImageButton>(R.id.txtBtn)
         val backBtn = findViewById<ImageButton>(R.id.backBtn)
         val dateTextView = findViewById<TextView>(R.id.date_textview)
 
@@ -26,6 +27,11 @@ class Menu : AppCompatActivity() {
 
         calculatorDesktopBtn.setOnClickListener{
             val intent = Intent(this, CalculatorActivity::class.java)
+            startActivity(intent)
+        }
+
+        txtBtn.setOnClickListener{
+            val intent = Intent(this, AboutUs::class.java)
             startActivity(intent)
         }
 

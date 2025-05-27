@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         val usernameInput = findViewById<EditText>(R.id.usernameInput)
         val passwordInput = findViewById<EditText>(R.id.passwordInput)
-        val cancelBtn = findViewById<ImageButton>(R.id.cancelBtn)
+//        val cancelBtn = findViewById<ImageButton>(R.id.cancelBtn)
         val continueBtn = findViewById<ImageButton>(R.id.continueBtn)
 
         // login notification (toast)
@@ -39,9 +39,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        cancelBtn.setOnClickListener{
-            usernameInput.setText("")
-            passwordInput.setText("")
-        }
+//        cancelBtn.setOnClickListener{
+//            usernameInput.setText("")
+//            passwordInput.setText("")
+//        }
     }
 }

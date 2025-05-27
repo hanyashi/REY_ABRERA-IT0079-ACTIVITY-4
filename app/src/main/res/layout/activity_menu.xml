@@ -19,8 +19,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:translationX="150dp"
-            android:translationY="100dp"
+            android:translationX="225dp"
+            android:translationY="250dp"
             android:orientation="vertical"
             >
 
@@ -40,6 +40,15 @@
                 android:gravity="center"
                 android:layout_marginBottom="50dp"
                 android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="75dp"
+            android:translationY="250dp"
+            android:orientation="vertical"
+            >
 
             <ImageButton
                 android:id="@+id/txtBtn"
@@ -56,8 +65,8 @@
                 android:gravity="center"
                 android:layout_marginBottom="50dp"
                 android:textColor="@color/white" />
-        </LinearLayout>
 
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -76,14 +85,28 @@
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/vista_back_btn" />
 
-            <ImageButton
-                android:id="@+id/calculatorTaskbarBtn"
-                android:layout_width="65dp"
-                android:layout_height="56dp"
-                android:background="@null"
-                android:contentDescription="@string/continuebutton"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/vista_calculator" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:translationX="242.5dp"
+                android:translationY="10dp"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextClock
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:timeZone="GMT+8:00"/>
+
+                <TextView
+                    android:text="@string/sampledate"
+                    android:id="@+id/date_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
         </LinearLayout>
 
     </RelativeLayout>

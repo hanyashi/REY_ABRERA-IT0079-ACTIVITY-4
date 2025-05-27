@@ -64,16 +64,6 @@
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/vista_continue_btn" />
 
-        <ImageButton
-            android:id="@+id/cancelBtn"
-            android:layout_width="166dp"
-            android:layout_height="60dp"
-            android:background="@null"
-            android:contentDescription="@string/cancelbutton"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/vista_cancel_btn"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="516dp" />
 
     </LinearLayout>
 

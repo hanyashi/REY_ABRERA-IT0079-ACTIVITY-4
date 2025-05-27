@@ -25,11 +25,12 @@
             >
 
             <ImageButton
-                android:id="@id/calculatorBtn"
+                android:id="@+id/calculatorDesktopBtn"
                 android:layout_width="119dp"
                 android:layout_height="110dp"
                 android:background="@null"
                 android:scaleType="fitCenter"
+                android:contentDescription="@string/calculatorbtn"
                 app:srcCompat="@drawable/vista_calculator" />
 
             <TextView
@@ -76,7 +77,7 @@
                 app:srcCompat="@drawable/vista_back_btn" />
 
             <ImageButton
-                android:id="@+id/calculatorBtn"
+                android:id="@+id/calculatorTaskbarBtn"
                 android:layout_width="65dp"
                 android:layout_height="56dp"
                 android:background="@null"

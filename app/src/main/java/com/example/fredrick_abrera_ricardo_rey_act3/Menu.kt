@@ -15,10 +15,16 @@ class Menu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        val calculatorBtn = findViewById<ImageButton>(R.id.calculatorBtn)
+        val calculatorTaskbarBtn = findViewById<ImageButton>(R.id.calculatorTaskbarBtn)
+        val calculatorDesktopBtn = findViewById<ImageButton>(R.id.calculatorDesktopBtn)
         val backBtn = findViewById<ImageButton>(R.id.backBtn)
 
-        calculatorBtn.setOnClickListener{
+        calculatorTaskbarBtn.setOnClickListener{
+            val intent = Intent(this, CalculatorActivity::class.java)
+            startActivity(intent)
+        }
+
+        calculatorDesktopBtn.setOnClickListener{
             val intent = Intent(this, CalculatorActivity::class.java)
             startActivity(intent)
         }

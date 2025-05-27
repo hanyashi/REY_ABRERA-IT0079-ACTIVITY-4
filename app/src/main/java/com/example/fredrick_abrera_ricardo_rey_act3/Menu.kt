@@ -1,13 +1,12 @@
 package com.example.fredrick_abrera_ricardo_rey_act3
 
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import android.widget.ImageButton
-import androidx.activity.enableEdgeToEdge
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 
 class Menu : AppCompatActivity() {
 
@@ -15,14 +14,15 @@ class Menu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        val calculatorTaskbarBtn = findViewById<ImageButton>(R.id.calculatorTaskbarBtn)
         val calculatorDesktopBtn = findViewById<ImageButton>(R.id.calculatorDesktopBtn)
         val backBtn = findViewById<ImageButton>(R.id.backBtn)
+        val dateTextView = findViewById<TextView>(R.id.date_textview)
 
-        calculatorTaskbarBtn.setOnClickListener{
-            val intent = Intent(this, CalculatorActivity::class.java)
-            startActivity(intent)
-        }
+        val currentDate = LocalDate.now()
+        val formatter = DateTimeFormatter.ofPattern("MMMM dd, yyyy")
+        val formattedDate = currentDate.format(formatter)
+
+        dateTextView.text = formattedDate
 
         calculatorDesktopBtn.setOnClickListener{
             val intent = Intent(this, CalculatorActivity::class.java)

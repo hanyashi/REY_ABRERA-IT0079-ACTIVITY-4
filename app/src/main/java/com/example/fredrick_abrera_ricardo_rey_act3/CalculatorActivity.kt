@@ -1,6 +1,7 @@
 package com.example.fredrick_abrera_ricardo_rey_act3
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.LinearGradient
 import android.graphics.Shader
 import android.graphics.Shader.TileMode
@@ -42,13 +43,7 @@ class CalculatorActivity : AppCompatActivity() {
         equalsSymbol = getString(R.string.equals_symbol)
         syntaxErrorMessage = getString(R.string.syntax_error_message)
 
-//        private lateinit var soundPool: SoundPool
-//        soundPool = SoundPool.Builder()
-//            .setMaxStreams(5)
-//            .build()
-//        exampleSound = soundPool.load(this, R.raw.<filename>, 1)
-//        soundPool.play(exampleSound, 1f, 1f, 0, 0, 1f)
-//        parameters are (<soundID>, <left volume>, <right volume>, <priority>, <loop>, <rate>)
+        val backBtn = findViewById<ImageButton>(R.id.backBtn)
 
         soundPool = SoundPool.Builder()
             .setMaxStreams(5)
@@ -182,6 +177,10 @@ class CalculatorActivity : AppCompatActivity() {
             solution = expression + equalsSymbol
             tvResult.text = resultText
             tvSolution.text = solution
+        }
+        backBtn.setOnClickListener{
+            val intent = Intent(this, Menu::class.java)
+            startActivity(intent)
         }
 
         // destructive buttons

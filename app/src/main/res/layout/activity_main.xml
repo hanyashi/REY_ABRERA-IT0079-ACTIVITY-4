@@ -25,14 +25,15 @@
             android:layout_width="163dp"
             android:layout_height="176dp"
             android:layout_marginBottom="30dp"
-            app:srcCompat="@drawable/img_frame"
+            android:contentDescription="@string/profile_photo"
+            app:srcCompat="@drawable/profile_photo"
             tools:layout_editor_absoluteX="124dp"
             tools:layout_editor_absoluteY="114dp" />
 
         <EditText
             android:id="@+id/usernameInput"
-            android:layout_width="220dp"
-            android:layout_height="48dp"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
             android:ems="10"
             android:hint="@string/username"
             android:inputType="text"
@@ -44,8 +45,8 @@
 
         <EditText
             android:id="@+id/passwordInput"
-            android:layout_width="220dp"
-            android:layout_height="48dp"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
             android:ems="10"
             android:hint="@string/password"
             android:inputType="textPassword"

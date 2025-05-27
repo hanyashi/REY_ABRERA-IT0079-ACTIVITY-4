@@ -37,4 +37,5 @@
     <string name="calculator">Calculator</string>
     <string name="about_us">About Us</string>
     <string name="c">C</string>
+    <string name="profile_photo">profile_photo</string>
 </resources>

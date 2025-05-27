@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background2"
+    tools:context=".CalculatorActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/display_container"
+        android:layout_width="290dp"
+        android:layout_height="118dp"
+        android:background="@drawable/textview2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123">
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-10dp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_variable"
+            android:gravity="end|center_vertical"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="@string/_0"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/inter_variable" />
+
+        <TextView
+            android:id="@+id/solution_display"
+            android:layout_width="367dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="47dp"
+            android:alpha="0.5"
+            android:fontFamily="@font/inter_variable"
+            android:gravity="end|center_vertical"
+            android:padding="12dp"
+            android:text="@string/_0"
+            android:textColor="#808080"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/inter_variable" />
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="300dp"
+        android:layout_height="469dp"
+        android:columnCount="4"
+        android:rowCount="6"
+        android:useDefaultMargins="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display_container"
+        app:layout_constraintVertical_bias="0.13">
+
+        <!-- row 1 -->
+        <ImageButton
+            android:id="@+id/btn_c"
+            style="@style/buttonStyle"
+            android:layout_margin="-5dp"
+            android:contentDescription="C"
+            android:src="@drawable/btn_c"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_ce"
+            style="@style/buttonStyle"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:contentDescription="@string/ce"
+            android:src="@drawable/btn_ce"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_percent"
+            style="@style/buttonStyle"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:contentDescription="@string/percent"
+            android:src="@drawable/btn_percent"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_backspace"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/backspace"
+            android:src="@drawable/btn_backspace"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <!-- row 2 -->
+        <ImageButton
+            android:id="@+id/btn_left_parentheses"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/left_parentheses"
+            android:src="@drawable/btn_left_parentheses"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_right_parentheses"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/right_parentheses"
+            android:src="@drawable/btn_right_parentheses"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_pos_neg_toggle"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/positive_negative_toggle"
+            android:src="@drawable/btn_pos_neg_toggle"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_obelus"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/division"
+            android:src="@drawable/btn_obelus"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <!-- row 3 -->
+        <ImageButton
+            android:id="@+id/btn_seven"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/_7"
+            android:src="@drawable/btn_seven"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_eight"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/_8"
+            android:src="@drawable/btn_eight"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_nine"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/_9"
+            android:src="@drawable/btn_nine"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_x"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/multiplication"
+            android:src="@drawable/btn_x"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <!-- row 4 -->
+        <ImageButton
+            android:id="@+id/btn_four"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/_4"
+            android:src="@drawable/btn_four"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_five"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/_5"
+            android:src="@drawable/btn_five"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_six"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/_6"
+            android:src="@drawable/btn_six"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_minus"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/subtraction"
+            android:src="@drawable/btn_minus"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <!-- row 5 -->
+        <ImageButton
+            android:id="@+id/btn_one"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/_1"
+            android:src="@drawable/btn_one"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_two"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/_2"
+            android:src="@drawable/btn_two"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_three"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/_3"
+            android:src="@drawable/btn_three"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_plus"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/addition"
+            android:src="@drawable/btn_plus"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <!-- row 6 -->
+        <ImageButton
+            android:id="@+id/btn_dot"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/dot"
+            android:src="@drawable/btn_dot"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_zero"
+            style="@style/buttonStyle"
+            android:contentDescription="@string/_0"
+            android:src="@drawable/btn_zero"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <ImageButton
+            android:id="@+id/btn_equals"
+            style="@style/buttonStyle"
+            android:layout_width="59dp"
+            android:layout_height="50dp"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:background="@null"
+            android:contentDescription="@string/equals"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_equals"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

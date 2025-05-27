@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu"
+    android:background="@drawable/windows_vista_bg2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="150dp"
+            android:translationY="100dp"
+            android:orientation="vertical"
+            >
+
+            <ImageButton
+                android:id="@id/calculatorBtn"
+                android:layout_width="119dp"
+                android:layout_height="110dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vista_calculator" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculator"
+                android:gravity="center"
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/txtBtn"
+                android:layout_width="119dp"
+                android:layout_height="110dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vista_txt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:gravity="center"
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradient"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="65dp"
+                android:layout_height="56dp"
+                android:background="@null"
+                android:contentDescription="@string/continuebutton"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vista_back_btn" />
+
+            <ImageButton
+                android:id="@+id/calculatorBtn"
+                android:layout_width="65dp"
+                android:layout_height="56dp"
+                android:background="@null"
+                android:contentDescription="@string/continuebutton"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/vista_calculator" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
